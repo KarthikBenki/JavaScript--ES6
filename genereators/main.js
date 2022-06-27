@@ -19,7 +19,10 @@ let g = g1();
 // console.log(g.next());
 // console.log(g.next());
 // console.log(g.next());
-
+let output = ''
 for(let x of g){
+    output+=`<h1>${x}</h1>`
     console.log(x);
 }
+
+document.getElementById('template').innerHTML = output;
