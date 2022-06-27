@@ -19,7 +19,16 @@ const divideBy2 = function(x){
     return x/2;
 }
 let myArr = [1,2,3,4,5];
+//using inbuilt map function
 let myOutput=myArr.map(divideBy2);
 console.log("Using inbuilt map function ",myOutput);
+//using custum mymap function
 myOutput=myArr.mymap(divideBy2);
 console.log("Using custum mymap function ",myOutput);
+
+let newArray = [[1,2,3],[4,5,6],[7,8,9]];
+myOutput = newArray.mymap((ele,i)=>{
+    return ele[i];
+})
+
+console.log(myOutput);//[1,5,9]
